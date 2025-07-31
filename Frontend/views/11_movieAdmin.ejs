@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<style>
+    button:hover {
+        cursor: pointer;
+        background-color: rgb(175, 174, 174);
+    }
+
+    .hover {
+        display: inline-block;
+
+    }
+
+    /* Animations */
+
+    .hover:hover {
+        animation: upDown 0.5s 1 alternate;
+        color: #ec4899;
+
+    }
+
+    @keyframes upDown {
+        0% {
+            transform: translateY(0);
+        }
+
+        80% {
+            transform: translateY(-10px);
+        }
+    }
+</style>
+
+<body class="text-white bg-black h-full">
+    <!-- navbar -->
+
+    <header>
+        <nav>
+            <ul class="flex justify-between items-baseline">
+
+                <div class="ml-5">
+                    <li class="text-2xl">Rendez<span class="text-pink-500">Show</span></li>
+                </div>
+                <div class="flex border rounded-2xl w-33 h-7 mt-3 ml-3 bg-black">
+
+
+                    <p class=" toggle1  text-s ml-2 w-17  cursor-pointer"><a href="/rendezShow/eventAd">Events</a></p>
+                    <p class=" toggle1  text-s border rounded-2xl bg-gray-500 w-18 pl-1 cursor-pointer">Movies</p>
+                </div>
+
+
+
+                <div class="flex gap-x-3 mr-5 items-end">
+                    <li class="hover searchable"><a href="/rendezShow/signup">Sign up</a></li>
+
+                    <li><input type="search" placeholder="search"
+                            class="w-30 h-5 border border-black-300 rounded-md p-2 searchInput">
+                    </li>
+
+                </div>
+            </ul>
+
+
+        </nav>
+    </header>
+
+
+    <main class="p-3">
+        <p class="text-s ml-70">Upload Movie</p>
+
+        <div class="bg-[#121212] p-6 rounded-lg mt-3">
+
+            <form action="http://localhost:3000/movieAd" method="post" enctype="multipart/form-data"
+                class="grid grid-cols-2 gap-4">
+
+                <input type="text" placeholder="Movie name" name="name"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+
+                <input type="text" name="time" placeholder="time"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+                <input type="date" name="date" class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+                <input type="text" placeholder="Venue" name="venue"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+                <input type="text" placeholder="Duration" name="duration"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+                <input type="text" placeholder="Language" name="language"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+                <input type="text" placeholder="Age limit" name="age"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+                <input type="text" placeholder="Genre" name="genre"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2">
+
+
+                <textarea rows="5" placeholder="Description" name="description"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2 col-span-2"></textarea>
+
+                <input type="file" name="thumbnail"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2 col-span-1">
+
+                <input type="text" placeholder="Price" name="price"
+                    class="border rounded-lg border-[rgba(255,255,255,0.2)] p-2 col-span-1">
+
+
+
+
+                <button type="submit"
+                    class="account bg-white text-black border rounded-lg p-2 col-span-2 w-full">Upload</button>
+
+
+            </form>
+        </div>
+        <div>
+
+            <div class="grid grid-cols-3 gap-7 gap-y-19 ml-12 mt-8 ">
+
+
+
+                <% arr.forEach(m=> { %>
+
+
+                    <section data-genre="<%= m.genre %>" class="w-40 h-fit p-1 movieSection ">
+                        <img src="/uploads/<%=m.thumbnail%>" alt="img"
+                            class="mt-1 border-1 border-white border-solid rounded-lg w-[170px] h-[230px] object-cover ">
+
+                        <p class="font-bold text-s text-white searchable ml-1">
+                            <%= m.name %>
+                        </p>
+                        <p class="font-light text-gray-400 text-xs  searchable mt-1 ml-1">
+                            <%= m.language %>
+                        </p>
+                        <p class="font-light text-gray-400 text-[8px] mt-1 ml-1 searchable break-words ">
+                            <%= m.description %>
+                        </p>
+                        <button
+                            class="butt text-xs bg-white h-[21px] w-[80px] text-[#45637d] mt-2 cursor-pointer ml-1 searchable"
+                            data-id="<%= m.id %>">Delete</button>
+                    </section>
+
+                    <% }); %>
+            </div>
+        </div>
+
+    </main>
+    <script src="../views/11_movieAdmin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+📄 Software Requirements Specification (SRS)
+
+🎯 Project Title: Event Booking System
+👤 Prepared By: [Your Name]
+📅 Date: July 05, 2025
+📌 Version: 1.0
+
+⸻
+
+1️⃣ Introduction
+
+1.1 🎯 Purpose
+
+This SRS outlines the functionalities, design, and technical details of the Event Booking System, a web application that allows users to browse and book events online.
+The system uses:
+	•	Backend: Node.js & Express.js
+	•	Frontend: HTML, CSS, JavaScript, Tailwind CSS
+
+⸻
+
+1.2 🔍 Scope
+
+The system provides the following features:
+	•	👤 User registration and login
+	•	📅 Viewing a list of upcoming events
+	•	🎟️ Booking events with seat limit enforcement
+	•	✅ Booking confirmation popup
+	•	🕓 User-specific booking history
+
+⸻
+
+1.3 👥 Intended Audience
+	•	👨‍💻 Developers
+	•	🎨 UI/UX Designers
+	•	🧪 Testers
+	•	👨‍🏫 Project Mentors or Reviewers
+
+⸻
+
+2️⃣ Overall Description
+
+2.1 🧩 Product Perspective
+
+This is a standalone web-based application.
+Deployment targets:
+	•	🌐 Backend: Render or Railway
+	•	💻 Frontend: Vercel or Netlify
+	•	🗄️ Database: MongoDB Atlas (cloud)
+
+⸻
+
+2.2 👤 User Types
+	•	🕵️ Guest: Can view events but not book
+	•	👨‍💼 Registered User: Can book events and view booking history
+
+⸻
+
+2.3 📎 Assumptions & Dependencies
+	•	🌐 Requires an internet connection
+	•	🗄️ Uses MongoDB Atlas as database
+	•	🔐 Uses JWT for authentication
+	•	💳 No payment integration in version 1
+
+⸻
+
+3️⃣ Functional Requirements
+
+3.1 🔐 User Registration & Login
+	•	Sign up with name, email, password
+	•	Login and receive a JWT token
+	•	Use token for protected actions
+
+⸻
+
+3.2 🗓️ Event Listings
+	•	View all upcoming events
+	•	Show event title, date, location, and available seats
+	•	Events fetched via backend API
+
+⸻
+
+3.3 🎟️ Booking Logic
+	•	“Book Now” button for available events
+	•	Confirmation modal for bookings
+	•	Prevent overbooking (enforce seat limits)
+
+⸻
+
+3.4 📜 Booking History
+	•	View all events a user has booked
+	•	Show event name, date, and booking timestamp
+
+⸻
+
+4️⃣ User Interface Requirements
+
+Pages to be included:
+	•	🏠 index.html: Welcome & Browse Events
+	•	🔑 login.html: Login Form
+	•	📝 register.html: Signup Form
+	•	📆 events.html: List of Events
+	•	🧾 event.html: Book Event
+	•	📂 history.html: Booking History
+
+⸻
+
+5️⃣ Non-Functional Requirements
+	•	🔐 Security: Password hashing (bcrypt), JWT auth
+	•	⚡ Performance: API response time < 500ms
+	•	📱 Responsive Design: Tailwind CSS for mobile-first layout
+	•	📈 Scalability: Support at least 100 concurrent users
+	•	🔧 Maintainability: Modular, clean code structure
+
+⸻
+
+6️⃣ System Design
+
+6.1 🧠 Backend Stack
+	•	Node.js + Express.js
+	•	MongoDB + Mongoose
+	•	JWT for authentication
+	•	bcrypt for password hashing
+
+⸻
+
+6.2 🎨 Frontend Stack
+	•	HTML, CSS, JavaScript
+	•	Tailwind CSS for styling
+	•	Fetch API to communicate with backend
+
+8️⃣ Acceptance Criteria
+	•	✅ User can register and login
+	•	📅 Events are displayed properly
+	•	🎟️ Bookings are saved and seat limits are enforced
+	•	🔐 Only logged-in users can book
+	•	🚀 Application is deployed and accessible online
+
+⸻
+
+9️⃣ Deployment Plan
+	•	🌐 Backend: Render or Railway
+	•	🗄️ Database: MongoDB Atlas
+	•	💻 Frontend: Vercel or Netlify
+	•	🔑 Use .env file for secret keys and tokens
+
+⸻
+
+🔟 Future Enhancements
+	•	💳 Payment Integration
+	•	🛠️ Admin Panel for managing events
+	•	📧 Email confirmations for bookings
+	•	🔍 Search and filtering for events
+
+
+
+MUST HAVE FEATURES
+
+✅ Must-Have Features
+
+1. 🔐 User Authentication
+	•	Signup with name, email, password
+	•	Login with email and password
+	•	Password hashing (using bcrypt)
+	•	JWT-based login (for session-less auth)
+	•	Protect routes like booking & history
+
+⸻
+
+2. 📅 Event Listings
+	•	Show a list of all upcoming events
+	•	Event cards must show:
+	•	Title
+	•	Date and time
+	•	Location
+	•	Available seats
+	•	Fetch events from backend API
+
+⸻
+
+3. 🎟️ Event Booking System
+	•	Users can click a “Book Now” button
+	•	Show confirmation modal before finalizing
+	•	Enforce seat limits (no overbooking)
+	•	Block duplicate bookings for the same user
+
+⸻
+
+4. 🕓 Booking History Page
+	•	Each logged-in user can:
+	•	View their booked events
+	•	See booking timestamp and event info
+	•	Pull from /api/bookings/me
+
+⸻
+
+5. 🧠 Role-Based Access (Basic)
+	•	Guest:
+	•	Can view events
+	•	Cannot book
+	•	Authenticated User:
+	•	Can book events
+	•	Can view booking history
+
+    7. 🌐 Frontend Pages (UI)
+	•	index.html – Welcome and list of events
+	•	login.html – Login form
+	•	register.html – Signup form
+	•	events.html – Display all events
+	•	event.html – Individual event booking
+	•	history.html – Show booking history
+
+Styled with Tailwind CSS and responsive layout for mobile & desktop.
+
+⸻
+
+8. 📦 Backend Essentials
+	•	Express Router for modular routes
+	•	MongoDB + Mongoose for database
+	•	JWT middleware to protect routes
+	•	Error handling (e.g., seat limit, bad token)
+	•	Use .env for configs (e.g., JWT_SECRET)
+
+⸻
+
+9. 📱 Frontend UX
+	•	Loading spinners or indicators
+	•	Confirmation dialog before booking
+	•	Notifications for success or error (e.g., toast or alert)
+
+⸻
+
+10. 🚀 Deployment-Ready Structure
+	•	Host backend (Render or Railway)
+	•	Host frontend (Vercel or Netlify)
+	•	MongoDB Atlas for cloud DB
+	•	Clean folder structure:
+
+    Bonus (Optional but Good Practice)
+	•	Admin route to add/edit events (later stage)
+	•	Responsive calendar view of events
+	•	Search or filter by date/category
+	•	Retry logic for failed requests
+	•	Logout button

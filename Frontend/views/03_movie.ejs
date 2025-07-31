@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="/output.css">
+    <link rel="stylesheet" href="/09_style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .slider {
+            max-width: 350px;
+            max-height: 200px;
+            min-height: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        @media (max-width: 550px) {
+            .slider {
+                max-width: 300px;
+                max-height: 120px;
+                min-height: 120px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    </style>
+
+</head>
+
+
+
+<body class="text-white h-100%">
+    <!-- navbar -->
+
+    <header>
+        <nav class="flex justify-between items-end  w-full h-10 ">
+            <button class="block sm:hidden ml-4 menu_but"><span class="material-symbols-outlined">
+                    menu
+                </span></button>
+
+            <div class=" ml-13 sm:ml-5 text-sm sm:text-2xl mb-3 sm:mb-0 ">
+                <span>Rendez<span class="text-pink-500">Show</span></span>
+            </div>
+
+            <div class="hidden sm:block">
+                <ul class="flex items-baseline gap-x-4 text-xs">
+                    <li class="hover searchable"><a href="/rendezShow">Home</a></li>
+                    <li class="hover searchable"><a href="/rendezShow/events">Events</a></li>
+                    <li class="hover searchable"><a href="/rendezShow/movie">Movies</a></li>
+                    <li class="hover searchable"><a href="/rendezShow/contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="hidden sm:block">
+                <ul class="flex gap-x-3 justify-evenly">
+                    <li class=" text-sm hover searchable  "><a href="/rendezShow/signup">Sign up</a>
+                    </li>
+
+                    <li><input type="search" placeholder="search"
+                            class="w-30 h-5 border border-black-300 rounded-md p-2 searchInput  ">
+                    </li>
+                </ul>
+            </div>
+            <div class="flex mr-2 mb-2">
+                <input type="search" placeholder="search"
+                    class="w-20 pl-1  block sm:hidden border border-black-300 rounded-md  searchInput">
+
+
+            </div>
+
+
+
+
+        </nav>
+
+    </header>
+
+    <div class=" menu_div   text-xs  list-none h-full w-full  hidden z-10 mt-10 ">
+
+        <ul>
+            <li class="text-2xl ml-4  "><a href="/rendezShow">Home</a></li><br>
+            <li class="text-2xl ml-4 mt-3 "><a href="/rendezShow/events">Events</a></li><br>
+            <li class="text-2xl ml-4 mt-3 "><a href="/rendezShow/movie">Movies</a></li><br>
+            <li class="text-2xl ml-4 mt-3"><a href="/rendezShow/contact">Contact</a></li><br>
+            <li class="text-2xl ml-4 mt-3"><a href="/rendezShow/signup">Signup</a></li>
+        </ul>
+
+
+
+    </div>
+
+    <!-- Main page -->
+    <main>
+
+        <!-- arrow change -->
+
+        <div class="flex justify-around sm:justify-evenly mt-15">
+            <button
+                class="leftArr w-[40px] sm:w-[50px] h-[40px] border-2 border-white rounded-lg pt-1 mt-10 sm:mt-20 cursor-pointer "><span
+                    class="  mb-18 sm:mb-0 material-symbols-outlined">arrow_back<span></button>
+            <img src="" alt="img" class=" slider border-3 w-[250px] sm:w-[400px]   rounded-lg border-[#0f172a]">
+            <button
+                class=" rightArr w-[40px] sm:w-[50px] h-[40px] border-2 border-white rounded-lg pt-1 mt-10 sm:mt-20 cursor-pointer"><span
+                    class="material-symbols-outlined">arrow_forward</span></button>
+        </div>
+
+
+        <!-- events main grid -->
+
+
+        <p class="font-extrabold font-serif ml-5 mt-7 text-2xl searchable">Movies in Delhi NCR!</p>
+        <div class="ml-5 mt-3">
+            <button class=" h-[20px] w-[50px] border-0 rounded-3xl bg-white text-pink-500 text-xs allBut">All</button>
+            <button
+                class=" h-[20px] w-[55px] border-0 rounded-3xl bg-white text-pink-500 text-xs engBut">English</button>
+            <button class=" h-[20px] w-[50px] border-0 rounded-3xl bg-white text-pink-500 text-xs hinBut">Hindi</button>
+            <button class=" h-[20px] w-[60px] border-0 rounded-3xl bg-white text-pink-500 text-xs hin4dBut">Hindi
+                4D</button>
+            <button class="h-[20px] w-[80px] border-0 rounded-3xl bg-white text-pink-500 text-xs eng4dBut">English
+                4D</button>
+            <button
+                class=" h-[20px] w-[55px] border-0 rounded-3xl bg-white text-pink-500 text-xs korBut">Korean</button>
+            <button class=" h-[20px] w-[55px] border-0 rounded-3xl bg-white text-pink-500 text-xs tamBut">Tamil</button>
+            <button
+                class=" h-[20px] w-[55px] border-0 rounded-3xl bg-white text-pink-500 text-xs telBut">Telegu</button>
+            <button
+                class=" h-[20px] w-[55px] border-0 rounded-3xl bg-white text-pink-500 text-xs punBut">Punjabi</button>
+        </div>
+
+        <div>
+
+            <div class="grid  grid-cols-2 sm:grid-cols-3 gap-7 gap-y-19 ml-5 sm:ml-12 mt-8 ">
+
+
+
+                <% arr.forEach(m=> { %>
+
+
+                    <section data-genre="<%= m.genre %>" class="w-40 h-fit p-1 movieSection ">
+                        <img src="/uploads/<%=m.thumbnail%>" alt="img"
+                            class="mt-1 border-1 border-white border-solid rounded-lg w-[170px] h-[230px] object-cover ">
+
+                        <p class="font-bold text-s text-white searchable ml-1">
+                            <%= m.name %>
+                        </p>
+                        <p class="font-light text-gray-400 text-xs  searchable mt-1 ml-1">
+                            <%= m.language %>
+                        </p>
+                        <p class="font-light text-gray-400 text-[8px] mt-1 ml-1 searchable break-words ">
+                            <%= m.description %>
+                        </p>
+                        <button
+                            class="book butt text-xs bg-white h-[21px] w-[80px] text-[#45637d] mt-2 cursor-pointer ml-1">Book
+                            tickets</button>
+                    </section>
+
+                    <% }); %>
+                        <p id="msg" class="hidden ml-24 sm:ml-60 mt-15 text-[#666666] w-50 h-45">
+                            No movie at the moment
+                        </p>
+
+
+
+
+
+            </div>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="bg-black mt-10">
+            <div class="flex justify-center ">
+                <div class="mt-3">
+                    <img src="/images_f/support_agent_24dp_999999_FILL0_wght400_GRAD0_opsz24.png" alt="img"
+                        class="cursor-pointer ml-10">
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable">24/7
+                        Customer Service
+                    </p>
+                </div>
+
+                <div class="ml-30 mt-3">
+                    <img src="/images_f/confirmation_number_24dp_999999_FILL0_wght400_GRAD0_opsz24.png" alt="img"
+                        class="cursor-pointer ml-15 sm:ml-10">
+
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable">Send
+                        ticket
+                        confirmation</p>
+                </div>
+            </div>
+            <div class="flex  justify-around mt-3 ">
+                <div>
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable"><a
+                            href="/04_contact.html">Contact Us</a></p>
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable">+91
+                        111 111
+                        111</p>
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable"> <a
+                            href="/08_about.html">Refund Policy</a></p>
+                </div>
+
+                <div class="mr-5 ">
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable"><a
+                            href="/index.html">Home</a></p>
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable"><a
+                            href="/08_about.html">About Us</a></p>
+                    <p class="font-light text-xs text-[#666666] cursor-pointer hover:text-white searchable"><a
+                            href="/rendezShow/events">Tickets</a></p>
+                </div>
+            </div>
+
+            <div class="flex items-center">
+                <div class="flex-grow border-t border-[#666666]"></div>
+                <p class="text-2xl mx-2 searchable">Rendez<span class="text-pink-500 searchable ">Show</span>
+                </p>
+                <div class="flex-grow border-t border-gray-300"></div>
+            </div>
+
+            <div class="flex justify-center ">
+                <a href="https://www.instagram.com/_muskan.2626?igsh=MWR1NjlvMnFjbHd0dA=="><img
+                        src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png"
+                        alt="img" height="30px" width="30px" class="cursor-pointer"></a>
+                <img src="/images_f/face-removebg-preview.png" alt="" height="25px" width="25px" class="cursor-pointer">
+                <a href="https://www.linkedin.com/in/muskan-bhagwashiya-144564331"><img
+                        src="https://static.vecteezy.com/system/resources/previews/018/930/480/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png"
+                        alt="img" height="35px" width="30px" class="cursor-pointer"></a>
+                <a href="https://25muskaaan@gmail.com"><img
+                        src="https://static.vecteezy.com/system/resources/previews/021/514/701/non_2x/google-gmail-logo-symbol-design-illustration-with-black-background-free-vector.jpg"
+                        alt="img" height="30px" width="30px" class="cursor-pointer"></a>
+            </div>
+
+
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+<script src="../views/03_movie.js">
+
+</script>
+
+</html>

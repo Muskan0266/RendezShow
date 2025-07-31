@@ -1,0 +1,88 @@
+{
+    "arr": [
+        {
+            "name": "Sarbala ji",
+            "time": "3 PM",
+            "date": "2025-07-23",
+            "language": "Punjabi,hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Cinema 12",
+            "duration": "2 h",
+            "thumbnail": "sarbala-ji-a934bab7.jpg",
+            "price": "199 onwards",
+            "genre": "punjabi",
+            "age": "13+",
+            "id": 1753612604390
+        },
+        {
+            "name": "Fantastic Four",
+            "time": "2 PM",
+            "date": "2025-08-02",
+            "language": "English,hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Cinema 1",
+            "duration": "2 h",
+            "thumbnail": "fanatstic.jpg",
+            "price": "299 onwards",
+            "genre": "english",
+            "age": "16+",
+            "id": 1753612802603
+        },
+        {
+            "name": "Sitaare Zameen par",
+            "time": "2 PM",
+            "date": "2025-08-02",
+            "language": "Hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Cinema 22",
+            "duration": "2 h",
+            "thumbnail": "sitaare-zameen-par1747294849_1.jpg",
+            "price": "299 onwards",
+            "genre": "hindi,hindi4d",
+            "age": "13+",
+            "id": 1753612840890
+        },
+        {
+            "name": "Metro inn dino",
+            "time": "2 PM",
+            "date": "2025-08-07",
+            "language": "Hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Cinema 22",
+            "duration": "2 h",
+            "thumbnail": "metro.avif",
+            "price": "299 onwards",
+            "genre": "hindi4d,hindi",
+            "age": "16+",
+            "id": 1753612886003
+        },
+        {
+            "name": "Superman",
+            "time": "2 PM",
+            "date": "2025-08-07",
+            "language": "Hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Cinema 22",
+            "duration": "2 h",
+            "thumbnail": "superman.webp",
+            "price": "299 onwards",
+            "genre": "english",
+            "age": "13+",
+            "id": 1753614496245
+        },
+        {
+            "name": "Maa",
+            "time": "4 PM",
+            "date": "2025-08-07",
+            "language": "Hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Cinema 22",
+            "duration": "2 h",
+            "thumbnail": "maa.jpeg",
+            "price": "299 onwards",
+            "genre": "hindi",
+            "age": "16+",
+            "id": 1753614986449
+        }
+    ]
+}

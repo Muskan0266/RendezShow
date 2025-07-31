@@ -1,0 +1,516 @@
+body {
+    background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+.menu_div {
+    position: fixed;
+    left: 0px;
+    top: 13px;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    animation: menu 0.5s ease-in-out forwards;
+
+}
+
+@keyframes menu {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+nav {
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+
+    background: linear-gradient(to right, #0f172a, #1e293b);
+
+
+}
+
+.img1 {
+    border: 3px solid #0f172a;
+    border-radius: 8px;
+
+}
+
+@media (max-width:550px) {
+    .img1 {
+        width: 55px;
+        height: 80px;
+        position: absolute;
+        left: 250px;
+    }
+
+}
+
+.img2 {
+    position: absolute;
+    left: 573px;
+    top: 110px;
+    border: 3px solid #0f172a;
+    border-radius: 8px;
+
+}
+
+@media (max-width:550px) {
+    .img2 {
+        width: 75px;
+        height: 60px;
+        position: absolute;
+        left: 317px;
+
+    }
+
+}
+
+.img3 {
+    position: absolute;
+    left: 601px;
+    top: 184px;
+    border: 3px solid #0f172a;
+    border-radius: 8px;
+}
+
+@media (max-width:550px) {
+    .img3 {
+        width: 55px;
+        height: 80px;
+        position: absolute;
+        left: 321px;
+        top: 184px;
+
+    }
+
+}
+
+.img4 {
+    position: absolute;
+    left: 498px;
+    top: 215px;
+    border: 3px solid #0f172a;
+    border-radius: 8px;
+}
+
+@media (max-width:550px) {
+    .img4 {
+        width: 80px;
+        position: absolute;
+        left: 234px;
+        top: 197px;
+
+
+    }
+
+}
+
+.butt:hover {
+    background-color: rgb(175, 174, 174);
+
+}
+
+.butt_view:hover {
+    background-color: rgb(175, 174, 174);
+}
+
+button {
+    cursor: pointer;
+}
+
+.fashion {
+    background: url("https://img.freepik.com/free-photo/spring-wardrobe-switch-still-life_23-2150176694.jpg?semt=ais_hybrid&w=740");
+    height: 150px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .fashion {
+        width: 400px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+}
+
+
+.music {
+    background: url("https://img.pikbest.com/wp/202408/headphones-music-notes-horizontal-banner-of-blue-background-with-white-and-musical-in-3d-rendering_9739392.jpg!bw700");
+    height: 150px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .music {
+        width: 400px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+}
+
+.sports {
+    background: url("https://media.istockphoto.com/id/1188462138/photo/variety-of-sport-accessories-on-wooden-surface.jpg?s=612x612&w=0&k=20&c=y2l7DYNkxbVteZy-Kx_adCzm-soTRbiEypje4j8ENe0=");
+    height: 150px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .sports {
+        width: 400px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+}
+
+.entertainment {
+    background: url("https://t4.ftcdn.net/jpg/06/46/82/11/360_F_646821181_dtb6IAxuQETSiXHyGefKwtWkXJNDIZAr.jpg");
+    height: 150px;
+    width: 250px;
+    background-position: center;
+    background-size: cover;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width: 550px) {
+    .entertainment {
+        width: 400px;
+        height: 200px;
+        background-position: center;
+        background-size: cover;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    }
+}
+
+.more {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer:hover {
+    color: white;
+}
+
+
+.hover {
+    display: inline-block;
+
+}
+
+/* Animations */
+
+.hover:hover {
+    animation: upDown 0.5s 1 alternate;
+    color: #ec4899;
+
+}
+
+
+
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.description {
+
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: description 1s ease-out forwards;
+}
+
+@keyframes description {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.description2 {
+
+    animation: description2 1s ease-out forwards;
+    /* animation-delay: 2s; */
+    opacity: 0;
+
+}
+
+@keyframes description2 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.butt_view {
+    transform: translateX(-100%);
+    opacity: 0;
+    animation: butt_view 1s ease-out forwards;
+    /* animation-delay: 2s; */
+}
+
+@keyframes butt_view {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.img1 {
+
+    /* transform: translateX(-100%); */
+    opacity: 0;
+    animation: img1 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes img1 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.img2 {
+
+    animation: img2 1s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+
+}
+
+@keyframes img2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.img3 {
+
+    /* transform: translateX(100%); */
+    opacity: 0;
+    animation: img3 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes img3 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.img4 {
+
+    animation: img4 1s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+
+}
+
+@keyframes img4 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* page 2 */
+.box {
+    opacity: 0;
+}
+
+@keyframes boxAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box-appear {
+    animation: boxAppear 1s ease-out forwards;
+}
+
+/* page3 */
+.catt {
+    opacity: 0;
+}
+
+.catt-appear {
+    animation: catAppear 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes catAppear {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+
+}
+
+.fashion {
+    opacity: 0;
+}
+
+.fashion_animate {
+    animation: fashion_animate 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fashion_animate {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.music {
+    opacity: 0;
+}
+
+.music_animate {
+    animation: music_animate 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes music_animate {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+.sports {
+    opacity: 0;
+}
+
+.sports_animate {
+    animation: sports_animate 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes sports_animate {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.entertainment {
+    opacity: 0;
+}
+
+.entertainment_animate {
+    animation: entertainment_animate 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+@keyframes entertainment_animate {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}

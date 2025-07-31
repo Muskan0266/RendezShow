@@ -1,0 +1,79 @@
+{
+    "arr": [
+        {
+            "name": "Stand Up",
+            "time": "2 PM",
+            "date": "2025-08-12",
+            "language": "Hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Hall",
+            "duration": "2 h",
+            "thumbnail": "standup.webp",
+            "price": "499 onwards",
+            "genre": "Comedy",
+            "age": "18+",
+            "category": "",
+            "id": 1753717552506
+        },
+        {
+            "name": "Gymnastics",
+            "time": "2 PM",
+            "date": "2025-08-12",
+            "language": "-",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Ground",
+            "duration": "3 h",
+            "thumbnail": "girl-doing-gymnastics-dance-with-colored-ribbon-blue_926199-2144625.avif",
+            "price": "399 onwards",
+            "genre": "Sports",
+            "age": "6+",
+            "category": "",
+            "id": 1753717580085
+        },
+        {
+            "name": "Concert",
+            "time": "7 PM",
+            "date": "2025-08-12",
+            "language": "-",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Staduium",
+            "duration": "2h 30m",
+            "thumbnail": "concert.jpg",
+            "price": "499 onwards",
+            "genre": "music",
+            "age": "12+",
+            "category": "",
+            "id": 1753717598692
+        },
+        {
+            "name": "Fashion walk",
+            "time": "5 PM",
+            "date": "2025-08-12",
+            "language": "-",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Stadium",
+            "duration": "2 h",
+            "thumbnail": "fashion.jpg",
+            "price": "500 onwards",
+            "genre": "Fashion",
+            "age": "13+",
+            "category": "",
+            "id": 1753869507350
+        },
+        {
+            "name": "Ipl 2025",
+            "time": "3 PM",
+            "date": "2025-08-12",
+            "language": "Hindi",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorem dolor ipsam voluptas omnis culpa.",
+            "venue": "Stadium",
+            "duration": "-",
+            "thumbnail": "cricket.jpg",
+            "price": "999 onwards",
+            "genre": "Sports",
+            "age": "13+",
+            "category": "sports",
+            "id": 1753871631707
+        }
+    ]
+}
