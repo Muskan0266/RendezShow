@@ -134,7 +134,7 @@ button {
 
 @media (max-width: 550px) {
     .fashion {
-        width: 400px;
+        width: 300px;
         height: 200px;
         background-position: center;
         background-size: cover;
@@ -155,7 +155,7 @@ button {
 
 @media (max-width: 550px) {
     .music {
-        width: 400px;
+        width: 300px;
         height: 200px;
         background-position: center;
         background-size: cover;
@@ -175,7 +175,7 @@ button {
 
 @media (max-width: 550px) {
     .sports {
-        width: 400px;
+        width: 300px;
         height: 200px;
         background-position: center;
         background-size: cover;
@@ -195,7 +195,7 @@ button {
 
 @media (max-width: 550px) {
     .entertainment {
-        width: 400px;
+        width: 300px;
         height: 200px;
         background-position: center;
         background-size: cover;
