@@ -389,7 +389,7 @@ app.delete("/rendezShow/deleteMovie/:id", (req, res) => {
 
 
 app.listen(port, () => {
-    console.log("running...")
+    console.log(`http://localhost:${port}`)
 })
 
 

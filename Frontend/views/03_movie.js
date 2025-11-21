@@ -263,11 +263,11 @@ menu_but.addEventListener("click", () => {
     menu_div.classList.toggle("hidden")
 })
 
-let img1 = "https://assets-in.bmscdn.com/discovery-catalog/events/et00420723-ntpwjgrfmu-landscape.jpg"
+let img1 = "https://i.ytimg.com/vi/PlBwcQic1vI/maxresdefault.jpg"
 let img2 = "https://www.acmodasi.in/amdb/images/movie/6/w/fantastic-four-2005-73768.jpg"
-let img3 = "https://img.englishcinemaparis.com/8MXOEdljVPCjbffmw_Bk3DGSslb9tHxexMgUbeODZVM/resize:fill:800:450:1:0/gravity:sm/aHR0cHM6Ly9leHBhdGNpbmVtYXByb2QuYmxvYi5jb3JlLndpbmRvd3MubmV0L2ltYWdlcy8xYTYyNGE5MS1kNzg0LTQ5ZGEtYTk4OC1jY2IwMWM0ZjFkNzAuanBn.jpg"
+let img3 = "https://i.pinimg.com/originals/04/35/b5/0435b5740ec9edcbe7dc003247495c72.jpg"
 let img4 = "https://i.ebayimg.com/images/g/-xEAAOSwN-lnaXUB/s-l1200.jpg"
-let img5 = "https://assets-in.bmscdn.com/discovery-catalog/events/et00403839-eafwvrajqc-landscape.jpg"
+let img5 = "https://i.ytimg.com/vi/kpiM9_P-hkQ/maxresdefault.jpg"
 let arr = [img1, img2, img3, img4, img5]
 let current = 0
 slider.src = arr[current]
