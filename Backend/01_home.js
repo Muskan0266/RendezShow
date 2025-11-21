@@ -16,7 +16,7 @@ app.set('views', path.join(__dirname, "../Frontend/views"));
 
 // Getting  SITE data
 app.get("/rendezShow", (req, res) => {
-    res.sendFile(path.join(__dirname, "../Frontend/01_home.html"))
+    res.sendFile(path.join(__dirname, "../Frontend/index.html"))
 })
 
 app.get("/rendezShow/about", (req, res) => {
@@ -25,9 +25,7 @@ app.get("/rendezShow/about", (req, res) => {
 
 
 
-// app.get("/rendezShow/movieAd", (req, res) => {
-//     res.sendFile(path.join(__dirname, "../Frontend/11_movieAdmin.html"))
-// })
+
 app.get("/rendezShow/contact", (req, res) => {
     res.sendFile(path.join(__dirname, "../Frontend/04_contact.html"))
 })

@@ -12,7 +12,7 @@
             "price": "499 onwards",
             "genre": "Comedy",
             "age": "18+",
-            "category": "",
+            "category": "comedy",
             "id": 1753717552506
         },
         {
@@ -27,7 +27,7 @@
             "price": "399 onwards",
             "genre": "Sports",
             "age": "6+",
-            "category": "",
+            "category": "sports",
             "id": 1753717580085
         },
         {
@@ -42,7 +42,7 @@
             "price": "499 onwards",
             "genre": "music",
             "age": "12+",
-            "category": "",
+            "category": "music",
             "id": 1753717598692
         },
         {
@@ -57,7 +57,7 @@
             "price": "500 onwards",
             "genre": "Fashion",
             "age": "13+",
-            "category": "",
+            "category": "Fashion",
             "id": 1753869507350
         },
         {
